@@ -8,21 +8,19 @@ The Ohloh API is a free, REST-based programming interface to the Ohloh open sour
 
 This page contains important summary information to help you get started. In-depth online documentation is available in the table of contents at left.
 
-Some sample code can be found on the [Examples](examples.md) page.
+Some sample code can be found on the [Examples](examples.md) page. For questions not covered in the documenation, the [Ohloh API forum](http://www.ohloh.net/forums/3492) can provide additional help.
 
-For questions not covered in the documenation, the [Ohloh API forum](http://www.ohloh.net/forums/3492) can provide additional help.
-
-Send bug reports to [info@ohloh.net].
+Send bug reports to info@ohloh.net.
 
 ## Terms of Use
 
-Terms of Use
-
 The Ohloh API has some restrictions. Please review the complete [Terms of Use](http://meta.ohloh.net/terms-2/) before you begin.
 
-We ask that you cite Ohloh in publications that use our data. Please include a link to [http://www.ohloh.net] on your web pages.
+We ask that you cite Ohloh in publications that use our data. Please include a link to http://www.ohloh.net on your web pages.
 
-Our terms require you to provide a link back to our site. While you’re free to use any method you’d prefer, we’ve provided this small button for your convenience: ![Ohloh Button](https://www.ohloh.net/images/badges/mini.gif) We recommend linking to our home page. The following html will link the small badge to our home page:
+Our terms require you to provide a link back to our site. While you’re free to use any method you’d prefer, we’ve provided this small button for your convenience: ![Ohloh Button](https://www.ohloh.net/images/badges/mini.gif)
+
+We recommend linking to our home page. The following html will link the small badge to our home page:
 
 ```html
 <a href ="http://www.ohloh.net"><img src="http://www.ohloh.net/images/badges/mini.gif" width="80" height="15" /></a>
@@ -38,7 +36,7 @@ It is important not to share API keys. In order to access or modify account data
 
 You can [register a new application](https://www.ohloh.net/accounts/me/api_keys/new) or [view the status](http://www.ohloh.net/accounts/me/api_keys) of your existing applications online.
 
-If you have special requirements for additional keys, or if you are interested in building a large-scale application, please contact us at [info@ohloh.net].
+If you have special requirements for additional keys, or if you are interested in building a large-scale application, please contact us at info@ohloh.net.
 
 ## OAuth Impersonation
 
@@ -67,7 +65,7 @@ http://www.ohloh.net/projects/1.xml?api_key=01234567890123456789
 
 For the sake of brevity, the `api_key` parameter will be omitted from the examples in this documentation. Remember to always include it in your actual queries.
 
-Note that the Ohloh API previously required the use of a version parameter v. This is no longer required, and the v parameter will be ignored.
+Note that the Ohloh API previously required the use of a version parameter `v`. This is no longer required, and will be ignored.
 
 ## XML Response Format
 
@@ -130,7 +128,7 @@ Some results will contain a collection of values. When this happens, the `<respo
 
 + __items_returned__ - The number of items returned in this response.
 + __items_available__ - The total number of database items matching the query, including those already returned.
-+ __first_item_position - The zero-based index of the first item returned
++ __first_item_position__ - The zero-based index of the first item returned
 
 For example, the response to `http://www.ohloh.net/projects.xml` might begin:
 
@@ -150,7 +148,7 @@ For example, the response to `http://www.ohloh.net/projects.xml` might begin:
 ## Collection Request Parameters
 
 + __query__ - Results will be filtered by the provided string. Only items that contain the query string in their names or descriptions will be returned. Filtering is case insenstive. Only alphanumeric characters are accepted. All non-alphanumeric characters will be replaced by spaces. Filtering is not available on all API methods, and the searched text depends on the type of object requested. Check the reference documentation for specifics.
-+ __sort__ - Controls the sort order of the returned results. Typical supported values are name, created_at, and updated_at. The specific sort options available depend on the type of object requested, so check to the reference documentation for specifics.
++ __sort__ - Controls the sort order of the returned results. Typical supported values are name, created_at, and updated_at. The specific sort options available depend on the type of object requested, so check to the reference documentation for specifics. _API does not support reverse sorting_.
 + __page__ - In most cases, the Ohloh API returns at most 25 items per request. Pass this parameter to request subsequent items beyond the first page. This parameter is _one-based_, with a default value of 1. If you pass a value outside the range of available pages, you will receive the first page.
 
 For example, to get the second page of projects containing “java” or “Java” in their titles, descriptions, or tags, you would request:
@@ -159,4 +157,5 @@ For example, to get the second page of projects containing “java” or “Java
 GET http://www.ohloh.net/projects.xml?query=java&page=2 
 ```
 
+- - -
 Copyright 2013 Black Duck Software, Inc. Unless otherwise marked, this work is licensed under a [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
