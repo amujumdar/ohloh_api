@@ -6,11 +6,38 @@ The Ohloh API is a free, REST-based programming interface to the Ohloh open sour
 
 ## Getting Help
 
-This page contains important summary information to help you get started. In-depth online documentation is available in the table of contents at left.
+This page contains important summary information to help you get started. In-depth online documentation is available, linked by the table of contents below.
 
 Some sample code can be found on the [Examples](examples.md) page. For questions not covered in the documenation, the [Ohloh API forum](http://www.ohloh.net/forums/3492) can provide additional help.
 
 Send bug reports to info@ohloh.net.
+
+## Table of Contents
++ Lookup By Email
++ Using OAuth with the Ohloh API
++ Examples
++ Ohloh API Reference
+    Account
+    Account News
+    ActivityFact
+    Analysis
+    ContributorFact
+    ContributorLanguageFact
+    Enlistment
+    Factoid
+    Kudo
+    KudoScore
+    Language
+    Message
+    Position
+    Project
+    Repository
+    SizeFact
+    Stack
+    StackEntry
++ API Use Agreement
++ Apply for an API Key
++ API Key Status
 
 ## Terms of Use
 
