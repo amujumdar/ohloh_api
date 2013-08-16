@@ -16,7 +16,7 @@ Send bug reports to info@ohloh.net.
 + [Lookup By Email](email_lookup.md)
 + [Using OAuth with the Ohloh API](oauth.md)
 + [Examples](examples.md)
-+ [Ohloh API Reference](reference.md)
++ Ohloh API Reference
     - [Account](reference/account.md)
     - [Account News](reference/news.md)
     - [ActivityFact](reference/activity_fact.md)
