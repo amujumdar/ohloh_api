@@ -13,31 +13,31 @@ Some sample code can be found on the [Examples](examples.md) page. For questions
 Send bug reports to info@ohloh.net.
 
 ## Table of Contents
-+ Lookup By Email
-+ Using OAuth with the Ohloh API
-+ Examples
-+ Ohloh API Reference
-    Account
-    Account News
-    ActivityFact
-    Analysis
-    ContributorFact
-    ContributorLanguageFact
-    Enlistment
-    Factoid
-    Kudo
-    KudoScore
-    Language
-    Message
-    Position
-    Project
-    Repository
-    SizeFact
-    Stack
-    StackEntry
-+ API Use Agreement
-+ Apply for an API Key
-+ API Key Status
++ [Lookup By Email](email_lookup.md)
++ [Using OAuth with the Ohloh API](oauth.md)
++ [Examples](examples.md)
++ [Ohloh API Reference](reference.md)
+    - [Account](reference/account.md)
+    - [Account News](reference/news.md)
+    - [ActivityFact](reference/activity_fact.md)
+    - [Analysis](reference/analysis.md)
+    - [ContributorFact](reference/contributor_fact.md)
+    - [ContributorLanguageFact](reference/contributor_language_fact.md)
+    - [Enlistment](reference/enlistment.md)
+    - [Factoid](reference/factoid.md)
+    - [Kudo](reference/kudo.md)
+    - [KudoScore](reference/kudo_score.md)
+    - [Language](reference/language.md)
+    - [Message](reference/message.md)
+    - [Position](reference/position.md)
+    - [Project](reference/project.md)
+    - [Repository](reference/repository.md)
+    - [SizeFact](reference/size_fact.md)
+    - [Stack](reference/stack.md)
+    - [StackEntry](reference/stack_entry.md)
++ [API Use Agreement](http://meta.ohloh.net/terms-2/)
++ [Apply for an API Key](http://www.ohloh.com/accounts/me/api_keys/new)
++ [API Key Status](http://www.ohloh.net/accounts/me/api_keys)
 
 ## Terms of Use
 
@@ -71,7 +71,7 @@ The standard Ohloh API allows read-only access to Ohloh data.
 
 Using OAuth, you can impersonate an Ohloh account while accessing the Ohloh API. This enables you to write to the Ohloh database, and also to access or modify private account information. You must first be granted permission to do this by an Ohloh account holder.
 
-You can read more at [Using OAuth with the Ohloh API](http://meta.ohloh.net/oauth/).
+You can read more at [Using OAuth with the Ohloh API](oauth.md).
 
 ## Forming a Request
 
@@ -147,7 +147,7 @@ If the `status` is `failed`, then the HTTP response code will be set appropriate
 </response>
 ```
 
-Details about this project response can be found in the Ohloh API Reference [project page](invalid_url).
+Details about this project response can be found in the Ohloh API Reference [project page](reference/project.md).
 
 ## XML Collection Response Format
 
